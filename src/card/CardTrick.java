@@ -28,6 +28,12 @@ public class CardTrick {
            System.out.println(c.getSuit() + " " + c.getValue());
         }
 
+        Card luckyCard = new Card();
+        luckyCard.setValue(7); // Example value
+        luckyCard.setSuit("Hearts"); // Example suit
+        magicHand[i] = luckyCard;
+        System.out.println(luckyCard.getSuit() + " " + luckyCard.getValue() + " (Lucky Card)");
+
         
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the value of card  in the range (1-13): ");
