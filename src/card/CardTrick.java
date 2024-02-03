@@ -17,7 +17,7 @@ public class CardTrick {
     public static void main(String[] args) {
         Card[] magicHand = new Card[7];
 
-        int i; // Declare i outside of the loop
+        int i; 
 
         for (i = 0; i < magicHand.length; i++) {
             Card c = new Card();
@@ -28,10 +28,10 @@ public class CardTrick {
         }
 
         Card luckyCard = new Card();
-        luckyCard.setValue(7); // Example value
-        luckyCard.setSuit("Hearts"); // Example suit
+        luckyCard.setValue(7); 
+        luckyCard.setSuit("Hearts"); 
 
-        // Adjust the index to i - 1 since i is incremented after the loop
+        
         magicHand[i - 1] = luckyCard;
 
         System.out.println(luckyCard.getSuit() + " " + luckyCard.getValue() + " (Lucky Card)");
